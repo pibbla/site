@@ -90,8 +90,7 @@ button, summary { font:inherit; }
 .event-info span { font-size:9px; letter-spacing:.14em; color:#727572; }
 .event-info h3 { font:500 clamp(28px,3.2vw,46px)/1.17 "Manrope",sans-serif; letter-spacing:-.04em; margin:8px 0 0; }
 .event-info h3 small { font-size:.48em; letter-spacing:0; color:#626662; white-space:nowrap; }
-.event-contact { display:inline-flex; align-items:center; gap:16px; margin-top:18px; padding-bottom:6px; border-bottom:1px solid; font-size:9px; font-weight:700; letter-spacing:.14em; }
-.event-card:hover .event-day span,.event-card:hover .event-day strong,.event-card:hover .event-day small,.event-card:hover .event-info span,.event-card:hover .event-info h3,.event-card:hover .event-info h3 small,.event-card:hover .event-contact { color:#0F6B3B; }
+.event-card:hover .event-day span,.event-card:hover .event-day strong,.event-card:hover .event-day small,.event-card:hover .event-info span,.event-card:hover .event-info h3,.event-card:hover .event-info h3 small { color:#0F6B3B; }
 .event-arrow { width:52px; height:52px; border:1px solid rgba(17,19,18,.3); border-radius:50%; display:grid; place-items:center; }
 .location-section { background:var(--green); color:var(--off); padding:90px 8vw; }
 .location-row { display:grid; grid-template-columns:1.35fr .65fr; gap:6vw; align-items:end; }
