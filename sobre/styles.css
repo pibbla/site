@@ -20,3 +20,10 @@
 @media(max-width:720px){.intro-section{gap:46px}.essence-card{min-height:auto;padding:85px 7vw}.yellow-card{padding-left:7vw}.pastor-feature{gap:36px}.pastor-feature>div{padding-top:0}.story{margin-top:55px}.membership-cta{min-height:600px}}
 @media(max-width:480px){.essence-card{padding:72px 22px}.yellow-card{padding-left:22px}.pastor-feature figure,.pastor-feature img{width:300px}.membership-cta{min-height:560px}.membership-cta .primary-button{font-size:9px;padding-inline:14px}.cards article::after{display:none}}
 @media(prefers-reduced-motion:reduce){.about-hero-content,.about-hero-seal{animation:none}.js .reveal{opacity:1;transform:none;transition:none}.cards article{transition:none}}
+
+/* Nossa Experiência + Nossa Casa: duas colunas no desktop. */
+@media(min-width:1051px){
+  .essence-section{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .essence-card{min-height:650px;padding:90px 6vw}
+  .yellow-card{grid-column:auto;padding-left:6vw}
+}
