@@ -92,14 +92,13 @@ button, summary { font:inherit; }
 .event-info h3 small { font-size:.48em; letter-spacing:0; color:#626662; white-space:nowrap; }
 .event-card:hover .event-day span,.event-card:hover .event-day strong,.event-card:hover .event-day small,.event-card:hover .event-info span,.event-card:hover .event-info h3,.event-card:hover .event-info h3 small { color:#0F6B3B; }
 .event-arrow { width:52px; height:52px; border:1px solid rgba(17,19,18,.3); border-radius:50%; display:grid; place-items:center; }
-.donation-section { padding:120px 8vw; background-color:var(--green); background-image:linear-gradient(105deg,rgba(4,24,13,.9) 0%,rgba(8,58,32,.82) 48%,rgba(15,107,58,.7) 100%),url("../public/hero-sunset.jpg"); background-size:cover; background-position:center 58%; background-repeat:no-repeat; color:var(--off); display:grid; grid-template-columns:.8fr 1.2fr; gap:7vw; align-items:start; }
+.donation-section { padding:120px 8vw; background-color:var(--green); background-image:linear-gradient(105deg,rgba(4,24,13,.68) 0%,rgba(6,38,21,.48) 48%,rgba(10,54,30,.3) 100%),url("../public/hero-sunset.jpg"); background-size:cover; background-position:center 52%; background-repeat:no-repeat; color:var(--off); display:grid; grid-template-columns:.8fr 1.2fr; gap:7vw; align-items:start; }
 .donation-heading { position:sticky; top:140px; }
 .donation-heading h2 { font:500 clamp(50px,6vw,88px)/.92 "Manrope",sans-serif; letter-spacing:-.065em; margin:0; }
 .donation-heading h2 em { color:var(--yellow); font-family:Georgia,serif; font-weight:400; }
 .donation-heading>p:last-child { max-width:500px; margin:34px 0 0; color:rgba(244,245,239,.74); font-size:16px; line-height:1.7; }
 .donation-options { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
 .donation-card { min-height:440px; padding:38px; background:var(--off); color:var(--black); display:flex; flex-direction:column; justify-content:space-between; }
-.donation-card-yellow { background:var(--yellow); }
 .donation-number { color:var(--green); font-size:10px; font-weight:700; letter-spacing:.16em; }
 .donation-card h3 { margin:42px 0 24px; font:600 clamp(36px,4vw,54px)/1 "Manrope",sans-serif; letter-spacing:-.055em; }
 .donation-card ul { list-style:none; margin:0; padding:0; border-top:1px solid rgba(17,19,18,.18); }
