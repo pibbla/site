@@ -19,6 +19,7 @@
         <a href="#inicio">INÍCIO</a>
         <a href="./sobre/">SOBRE NÓS</a>
         <a href="https://www.youtube.com/@PIBBLAtv1" target="_blank" rel="noreferrer">MENSAGENS <span aria-hidden="true">↗</span></a>
+        <a href="#doacao">DOAÇÃO</a>
         <a href="#contato">CONTATO</a>
       </nav>
       <details class="mobile-nav">
@@ -27,6 +28,7 @@
           <a href="#inicio">INÍCIO</a>
           <a href="./sobre/">SOBRE NÓS</a>
           <a href="https://www.youtube.com/@PIBBLAtv1" target="_blank" rel="noreferrer">MENSAGENS <span aria-hidden="true">↗</span></a>
+          <a href="#doacao">DOAÇÃO</a>
           <a href="#contato">CONTATO</a>
         </div>
       </details>
@@ -247,6 +249,9 @@
     document.querySelector('[data-open-privacy]').addEventListener('click', () => privacyDialog.showModal());
     privacyDialog.addEventListener('click', (event) => {
       if (event.target === privacyDialog) privacyDialog.close();
+    });
+    document.querySelectorAll('.mobile-nav-panel a').forEach((link) => {
+      link.addEventListener('click', () => link.closest('.mobile-nav').removeAttribute('open'));
     });
   </script>
 </body>
