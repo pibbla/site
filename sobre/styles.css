@@ -29,19 +29,21 @@
 }
 
 /* Declaração de fé: leitura editorial em duas colunas de cinco itens. */
-.beliefs-section{background:var(--white);color:var(--black)}
-.beliefs-section .eyebrow.light::before{background:var(--green)}
-.beliefs-heading h2{color:var(--green)}
-.beliefs-intro{color:var(--black)}
+.beliefs-section{background:var(--black);color:var(--off)}
+.beliefs-section .eyebrow.light::before{background:var(--yellow)}
+.beliefs-heading h2{color:var(--yellow)}
+.beliefs-intro{color:var(--off)}
 .beliefs-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(5,auto);grid-auto-flow:column;column-gap:7vw;border-top:0}
-.beliefs-list li{grid-template-columns:64px minmax(0,1fr);gap:22px;padding:30px 0;border-top:1px solid rgba(17,19,18,.2);border-bottom:0}
-.beliefs-list p{font-size:clamp(18px,1.55vw,23px);color:var(--black)}
-.beliefs-list small{color:#6f7470}
-.belief-number{color:var(--green)}
+.beliefs-list li{grid-template-columns:64px minmax(0,1fr);gap:22px;padding:30px 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:0}
+.beliefs-list p{font-size:clamp(18px,1.55vw,23px);color:var(--off)}
+.beliefs-list small{color:rgba(244,245,239,.56)}
+.belief-number{color:var(--yellow)}
 
 /* Liderança: retrato e introdução juntos; biografia completa abaixo. */
 @media(min-width:1051px){
   .pastor-feature{grid-template-columns:300px minmax(0,900px);gap:clamp(48px,7vw,110px);align-items:start}
+  .story{grid-template-columns:repeat(2,minmax(0,1fr));gap:7vw}
+  .story>div{max-width:none}
 }
 .story{width:100%;max-width:none}
 .story>div{max-width:960px}
@@ -63,3 +65,7 @@
 @media(max-width:480px){
   .beliefs-list li{grid-template-columns:1fr;gap:10px}
 }
+
+/* Evita a célula cinza vazia na última linha de Serviço & Missões. */
+.ministries .group:last-child .cards{background:transparent;border:0;gap:1px}
+.ministries .group:last-child .cards article{outline:1px solid rgba(17,19,18,.18)}
