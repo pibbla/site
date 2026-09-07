@@ -197,8 +197,57 @@
       </div>
       <div class="footer-bottom">
         <p>© PIBBLA | Todos os Direitos Reservados.</p>
+        <button class="privacy-trigger" type="button" data-open-privacy>Termos de Privacidade</button>
       </div>
     </footer>
+
+    <dialog class="privacy-dialog" aria-labelledby="privacy-title">
+      <div class="privacy-dialog-header">
+        <div>
+          <p class="eyebrow">DOCUMENTO LEGAL</p>
+          <h2 id="privacy-title">Termos de Privacidade</h2>
+        </div>
+        <form method="dialog">
+          <button class="privacy-close" type="submit" aria-label="Fechar termos de privacidade">FECHAR <span aria-hidden="true">×</span></button>
+        </form>
+      </div>
+      <div class="privacy-dialog-content">
+        <p>O conteúdo deste site (<a href="http://pibbla.org/" target="_blank" rel="noreferrer">pibbla.org</a>) tem como objetivo edificar a Igreja, evangelizar os não alcançados e contribuir para o crescimento ministerial de líderes cristãos.</p>
+        <p>As fontes dos artigos e matérias serão sempre que possível identificadas, exceto nos casos de fonte desconhecida, de domínio público ou de autoria não identificada. Caso você seja comprovadamente o autor de alguma das matérias veiculadas em nosso site, pedimos que entre em contato conosco o mais rápido possível para que imediatamente identifiquemos sua autoria, assim podendo fazer as alterações solicitadas ou até mesmo a retirada da matéria do ar em respeito ao autor e aos seus direitos de criação e propriedade autoral.</p>
+        <p>Os artigos e matérias de colaboradores publicadas neste site são de inteira responsabilidade de seus autores e não expressam necessariamente a opinião do site ou a postura ministerial e doutrinária da PIBBLA.</p>
+        <p>Todo o conteúdo do site, com exceção das fotos, pode ser usado como citação desde que identificando a fonte. Não é permitido, no entanto, a reprodução para fins de comercialização.</p>
+        <p><strong>As fotos em nosso website, assim como a galeria de fotos de eventos, vídeos, áudio etc., não poderão ser utilizadas sem a concessão da PIBBLA em forma escrita!</strong></p>
+        <p>Participe da otimização do nosso site enviando sua contribuição, opinião ou crítica construtiva por meio de nossos canais de contato.</p>
+        <p><strong>Este site pertence à Primeira Igreja Batista Brasileira de Los Angeles (PIBBLA).</strong></p>
+
+        <h3>Dados Pessoais</h3>
+        <p>A PIBBLA não vende, aluga ou, de outro modo, torna disponível a terceiros qualquer dado pessoal (nome, endereço, número de telefone e/ou fax e endereço de correio eletrônico) enviado pelos utilizadores do nosso site.</p>
+        <p>Usaremos a sua informação pessoal de modo confidencial e exclusivamente em nosso relacionamento.</p>
+
+        <h3>Dados Não Pessoais</h3>
+        <p>A PIBBLA pode recorrer à informação estatística não pessoalmente identificável a fim de otimizar o nosso site, como parte do nosso processo de revisão interna contínua e, de um modo geral, para aprender mais sobre nossos visitantes cadastrados.</p>
+
+        <h3>Direitos Autorais</h3>
+        <p>Todos os estudos, informações e imagens ou outros direitos de propriedade intelectual mencionados neste site pertencem à Primeira Igreja Batista Brasileira de Los Angeles ou aos autores mencionados.</p>
+        <p>Modificação, cópia, empréstimo, transmissão e radiofusão não autorizados são proibidos. O material originário deste site não poderá ser comercializado.</p>
+        <p>Os links do site podem conduzi-lo a outros sites e a PIBBLA não se responsabiliza pelo teor, exatidão ou função desses sites; as conexões são fornecidas em boa-fé e a PIBBLA não pode se responsabilizar por qualquer alteração subsequente nos sites aos quais está conectada.</p>
+
+        <h3>Política de Privacidade</h3>
+        <p>A PIBBLA e qualquer parte envolvida na criação, produção ou distribuição deste site não serão responsáveis por quaisquer danos, custos, perdas ou quaisquer obrigações diretas, incidentais, consequentes, indiretas ou punitivas resultantes de seu acesso ou uso deste site. A PIBBLA não será responsável por qualquer dano ou vírus que possa infectar seu computador ou outros equipamentos pelo uso, acesso ou transferência de qualquer material deste site.</p>
+        <p>Considerando que alguns detalhes pessoais enviados aos sites da PIBBLA estão sujeitos à nossa política de proteção e privacidade de dados pessoais, entendemos que toda a informação fornecida à PIBBLA por meio da Internet (incluindo observações, sugestões, ideias, gráficos etc.) se tornará e permanecerá de nossa exclusiva propriedade com direitos irrestritos ao seu uso, sem qualquer compensação a você ou a outra pessoa. Adicionalmente, qualquer informação deste tipo não será por nós tratada como confidencial.</p>
+
+        <h3>Segurança da Informação</h3>
+        <p>Dados de identificação pessoal são mantidos de maneira segura. Somente os funcionários autorizados da PIBBLA, seus ministérios ou líderes autorizados têm acesso aos dados de identificação pessoal.</p>
+        <p>Esta política pode ser modificada periodicamente.</p>
+      </div>
+    </dialog>
   </main>
+  <script>
+    const privacyDialog = document.querySelector('.privacy-dialog');
+    document.querySelector('[data-open-privacy]').addEventListener('click', () => privacyDialog.showModal());
+    privacyDialog.addEventListener('click', (event) => {
+      if (event.target === privacyDialog) privacyDialog.close();
+    });
+  </script>
 </body>
 </html>

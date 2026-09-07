@@ -132,6 +132,21 @@ footer { background:var(--off); color:var(--black); padding:90px 8vw 30px; displ
 .footer-links span { font-size:9px; letter-spacing:.18em; color:var(--green); margin-bottom:12px; }
 .footer-links a { color:#555b57; }
 .footer-bottom { grid-column:1/-1; border-top:1px solid rgba(17,19,18,.15); padding-top:26px; display:grid; grid-template-columns:1fr auto; gap:30px; font-size:10px; color:#696e6b; }
+.privacy-trigger { appearance:none; padding:0; border:0; background:none; color:inherit; cursor:pointer; font:inherit; }
+.privacy-trigger:hover { color:var(--green); text-decoration:underline; text-underline-offset:4px; }
+.privacy-dialog { width:min(900px,calc(100% - 40px)); max-height:calc(100vh - 40px); margin:auto; padding:0; border:0; background:var(--off); color:var(--black); box-shadow:0 30px 90px rgba(0,0,0,.38); }
+.privacy-dialog::backdrop { background:rgba(5,18,10,.78); backdrop-filter:blur(5px); }
+.privacy-dialog-header { position:sticky; top:0; z-index:2; padding:34px 42px 28px; border-bottom:1px solid rgba(17,19,18,.15); background:rgba(244,245,239,.97); display:flex; align-items:flex-start; justify-content:space-between; gap:28px; }
+.privacy-dialog-header .eyebrow { margin-bottom:12px; color:var(--green); }
+.privacy-dialog-header h2 { margin:0; font:500 clamp(34px,5vw,58px)/1 "Manrope",sans-serif; letter-spacing:-.055em; }
+.privacy-close { appearance:none; border:1px solid rgba(17,19,18,.22); background:transparent; padding:11px 13px; color:var(--black); cursor:pointer; display:flex; align-items:center; gap:10px; font-size:9px; font-weight:700; letter-spacing:.12em; }
+.privacy-close span { font-size:20px; line-height:.7; }
+.privacy-close:hover { background:var(--green); color:#fff; border-color:var(--green); }
+.privacy-dialog-content { padding:36px 42px 48px; }
+.privacy-dialog-content p { margin:0 0 20px; color:#505652; font-size:15px; line-height:1.75; }
+.privacy-dialog-content h3 { margin:42px 0 14px; color:var(--green); font:600 24px/1.2 "Manrope",sans-serif; letter-spacing:-.025em; }
+.privacy-dialog-content strong { color:var(--black); }
+.privacy-dialog-content a { color:var(--green); text-decoration:underline; text-underline-offset:3px; }
 
 @media (max-width:1050px) {
   .desktop-nav { display:none; }
@@ -234,6 +249,14 @@ footer { background:var(--off); color:var(--black); padding:90px 8vw 30px; displ
   .footer-brand { align-items:flex-start; gap:16px; }
   .footer-brand img { width:86px; height:86px; }
   .footer-brand p { font-size:17px; }
+  .privacy-dialog { width:calc(100% - 24px); max-height:calc(100vh - 24px); }
+  .privacy-dialog-header { padding:24px 20px 20px; }
+  .privacy-dialog-header .eyebrow { display:none; }
+  .privacy-dialog-header h2 { font-size:32px; }
+  .privacy-close { padding:10px; }
+  .privacy-close { font-size:0; }
+  .privacy-close span { font-size:22px; }
+  .privacy-dialog-content { padding:28px 20px 36px; }
 }
 
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none!important; } .about-photo { animation:none; transform:none; } }
