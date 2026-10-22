@@ -2,9 +2,11 @@ document.documentElement.classList.add('js');
 
 const revealTargets = document.querySelectorAll([
   '.intro-section > *', '.essence-card > *', '.beliefs-heading > *',
-  '.beliefs-list li', '.leadership > header', '.pastor-feature > *',
-  '.story > *', '.notes > *', '.history > *',
-  '.ministries > header > *', '.group', '.membership-cta > *'
+  '.faith-copy > *', '.beliefs-list li', '.editorial-section > *',
+  '.section-heading > *', '.section-intro > *', '.welcome-cards > *',
+  '.family-cards > *', '.feature-band > *', '.leadership > header',
+  '.leadership-profiles > *', '.history > *', '.history-content > *',
+  '.ministries > header > *', '.group', '.final-invitation > *'
 ].join(','));
 
 revealTargets.forEach((element, index) => {
